@@ -1,0 +1,46 @@
+.event {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 4px;
+    width: 90%;
+    background-color: $bg-event-color;
+    border-radius: 4px;
+    border-color: $bg-event-color;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: 1s;
+    animation: show 0.5s 1;
+    animation-fill-mode: forwards;
+    z-index: 10;
+    &__name {
+        margin-right: 2px;
+        min-width: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        z-index: 11;
+    }
+    &__time {
+        display: block;
+        min-width: 100px;
+    }
+    &__description {
+        margin-left: 2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        z-index: 12;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
