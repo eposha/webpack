@@ -6,11 +6,10 @@
     "scripts": {
         "test": "jest",
         "test:watch": "jest --watch",
-        "build:styles": "sass ./src/sass/index.scss ./dist/styles.css",
+        "build:styles": "sass ./src/styles/index.scss ./dist/style.css",
         "copy:html": "cp ./index.html ./dist/index.html",
         "copy:scripts": "cp -R ./src/scripts ./dist/scripts",
         "copy:favicon": "cp -R ./src/favicon ./dist/favicon",
-        "copy:styles": "cp -R ./src/styles ./dist/styles",
         "copy:css": "cp ./style.css ./dist/style.css",
         "clean": "rm -rf ./dist",
         "build": "npm-run-all clean build:styles copy:*"
