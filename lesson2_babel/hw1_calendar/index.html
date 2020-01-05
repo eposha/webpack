@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/calendar-256.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/calendar-256.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/calendar-256.png">
+    <link rel="manifest " href="./src/favicon/site.webmanifest ">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <button class="add-button add-event">
+                    <div class="VVsfQ add-event">
+                            <svg class="add-event" width="36" height="36" viewBox="0 0 36 36">
+                                <path class="add-event" fill="#34A853" d="M16 16v14h4V20z"></path>
+                                <path class="add-event"fill="#4285F4" d="M30 16H20l-4 4h14z"></path>
+                                <path class="add-event"fill="#FBBC05" d="M6 16v4h10l4-4z"></path>
+                                <path class="add-event"fill="#EA4335" d="M20 16V6h-4v14z"></path>
+                                <path class="add-event"fill="none" d="M0 0h36v36H0z"></path>
+                            </svg>
+                        </div>
+                    <span class="add-button__text add-event">Create</span>
+                </button>
+            <button class="today-button">
+                    Today
+                </button>
+            <div class="nav-button">
+                <button class="nav-button__prev button-style">
+                      <i class="material-icons nav-button__size">keyboard_arrow_left</i>
+                    </button>
+                <button class="nav-button__next button-style">
+                    <i class="material-icons nav-button__size ">chevron_right</i>
+                    </button>
+            </div>
+            <span class="header-date">
+                Nov - Dec 2019
+            </span>
+            <span class="status-server"></span>
+        </nav>
+        <section class="days">
+        </section>
+        <section class="holidays">
+            <div class="holidays__block"></div>
+            <div class="holidays__block"></div>
+            <div class="holidays__block"></div>
+            <div class="holidays__block"></div>
+            <div class="holidays__block"></div>
+            <div class="holidays__block"></div>
+            <div class="holidays__block"></div>
+
+        </section>
+    </header>
+
+    <!-- Table section -->
+
+    <section class="table">
+        <div class="times"></div>
+        <div class="lines"></div>
+
+        <div class="table-sections"></div>
+        <div class="redline setTime">
+            <div class="redline__ball"></div>
+            <div class="redline__line"></div>
+        </div>
+    </section>
+
+    <section class="popup">
+        <form class="popup__form">
+            <button class="close material-icons">
+                close  
+            </button>
+            <input class="input__name" type="text" name='name' placeholder="Добавте назву">
+            <div class="date-block ">
+                <i class="Tiny material-icons">access_time</i>
+                <input class="start-date input-style" type="date" id="start" name="startDate" value="2019-12-05" max="2020-12-05 ">
+                <select class="start-time time-list input-style " name="startTime"> 
+                </select>
+                <span>-</span>
+                <select class="end-time time-list input-style " name="endTime">       
+                </select>
+                <input class="end-date input-style " type="date" id="start " name="endData" value="2019-12-05 " max="2020-12-31 ">
+            </div>
+            <div class="input__color">
+                <span>choose a color</span>
+                <select class="select__color" name="color">       
+                    <option value="#039be5" class="standart" selected>standart</option>
+                    <option value="red" class="red">red</option>
+                    <option value="green" class="green">green</option>
+                    <option value="blue" class="blue">blue</option>
+            </select>
+            </div>
+            <div class="description ">
+                <i class="Tiny material-icons ">format_align_left
+                        </i>
+                <textarea class="description-input " name="description" cols="42 " rows="4 " placeholder="Добавте опис "></textarea>
+            </div>
+            <div class="control ">
+                <button class="delete-ivent ">  
+                    <i class="Tiny material-icons ">delete</i>
+                </button>
+                <button class="submit-button ">Зберегти</button>
+            </div>
+        </form>
+        <span class="event__name "></span>
+        <span class="event__description "></span>
+    </section>
+    <script src="src/scripts/index.js " type="module"></script>
+
+</body>
+
+</html>

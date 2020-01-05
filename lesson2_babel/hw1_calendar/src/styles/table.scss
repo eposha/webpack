@@ -1,0 +1,38 @@
+.table {
+    display: flex;
+    padding-top: 163px;
+    width: 100%;
+    z-index: 1;
+    .times {
+        &__blocks {
+            position: relative;
+            top: 51px;
+            margin-right: 10px;
+            margin-left: 10px;
+            height: 60px;
+            color: $times-color;
+        }
+    }
+    .lines {
+        &__blocks {
+            height: 60px;
+            width: 10px;
+            border-top: 1px solid $table-color-border;
+        }
+    }
+    .table-sections {
+        position: relative;
+        width: 100%;
+        &__section {
+            position: relative;
+            display: flex;
+            height: 60px;
+            width: 100%;
+            border-top: 1px solid $table-color-border;
+            border-left: 1px solid $table-color-border;
+        }
+        &__line {
+            display: flex;
+        }
+    }
+}
