@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'header';
+@import 'days';
+@import 'popup';
+@import 'table';
+@import 'timeline';
+@import 'event';
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+}

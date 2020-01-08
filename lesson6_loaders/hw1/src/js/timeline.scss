@@ -1,0 +1,23 @@
+.redline {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 27vh;
+    z-index: 10;
+    &__ball {
+        position: relative;
+        bottom: 6px;
+        right: 6px;
+        height: 12px;
+        width: 12px;
+        border-radius: 100%;
+        background-color: $timeline-color;
+    }
+    &__line {
+        position: relative;
+        bottom: 6px;
+        right: 6px;
+        width: 100%;
+        border-top: 2px solid $timeline-color;
+    }
+}

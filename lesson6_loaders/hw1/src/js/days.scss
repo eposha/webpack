@@ -1,0 +1,32 @@
+.days {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-left: 70px;
+    width: 100%;
+    border-top: 1px solid $table-color-border;
+    .wrapper {
+        margin-top: 10px;
+        .week-day {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: $days-color;
+        }
+        .days__numbe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 46px;
+            height: 46px;
+            font-size: 25px;
+            color: $days-color;
+            border-radius: 100%;
+        }
+        .active-day-number {
+            background-color: $active-day-color;
+            color: #fff;
+        }
+    }
+}
