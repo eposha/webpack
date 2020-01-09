@@ -1,0 +1,99 @@
+header {
+    position: fixed;
+    border-bottom: 1px solid #00000024;
+    padding: 20px 0 0px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 50;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    .status-server {
+        margin-left: auto;
+        margin-right: 25px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 80% 20%, #fff 2%, green);
+        box-shadow: 60px -80px 80px rgba(0, 0, 0, .5) inset;
+    }
+    .status-server__off {
+        background: radial-gradient(circle at 80% 20%, #fff 2%, red);
+    }
+}
+
+.add-button {
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #0000004f;
+    border-top: none;
+    border-left: #0000004f;
+    border-right: #0000004f;
+    border-radius: 40px;
+    outline: none;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.11);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.11);
+    box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.11);
+}
+
+.add-button:hover {
+    background-color: #0000000d;
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.22);
+    -moz-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.22);
+    box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.22);
+}
+
+.today-button {
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #00000036;
+    outline: none;
+    margin-right: 25px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.today-button:hover {
+    background-color: #0000000d;
+}
+
+.button-style {
+    background-color: transparent;
+    margin: 0 5px;
+    border: none;
+}
+
+.nav-button__size {
+    font-size: 30px;
+    border-radius: 100px;
+    outline: none;
+}
+
+.nav-button__size:hover {
+    background-color: #0000000d;
+}
+
+.header-date {
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.holidays {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    height: 15px;
+    &__block {
+        display: flex;
+        width: 100%;
+        border-left: 1px solid $table-color-border;
+    }
+}

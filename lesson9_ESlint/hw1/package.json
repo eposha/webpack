@@ -1,0 +1,43 @@
+{
+    "name": "task1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint src/js",
+        "lint:fix": "eslint src --fix",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "build": "webpack -p",
+        "start": "webpack-dev-server -d --devtools eval-source-map --open"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.7.7",
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "babel-loader": "^8.0.6",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.4.1",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-import": "^2.19.1",
+        "file-loader": "^5.0.2",
+        "html-webpack-plugin": "^3.2.0",
+        "jest": "^24.9.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.24.2",
+        "sass-loader": "^8.0.0",
+        "style-loader": "^1.1.2",
+        "url-loader": "^3.0.0",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1"
+    },
+    "dependencies": {
+        "core-js": "^3.6.1"
+    },
+    "description": "This project is a calendar where you can create your own events. * By default, the main screen is available in the calendar - a week is divided by days, and days by hours. * The user can switch between weeks using the left-button icons. * The 'Today' button switches to the current week. * The user can add an event to the calendar by clicking on the desired area of the day. After that, in the popup you can select the event settings - title, description (optional), exact date, duration in hours. * You can also add an event by clicking (+) on the left side of the screen. * An event can be deleted / edited by clicking on it in the calendar * Validation rules: two events cannot overlap in time, one event cannot be longer than 6 hours, you cannot edit / delete an event earlier than 15 minutes before the start"
+}
